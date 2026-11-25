@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-11-25T01:48:59.541Z",
+  "base_url": "http://127.0.0.1:8000",
+  "role": "APOTEKER",
+  "method": "Playwright read-only crawler (link traversal, tanpa submit form)",
+  "max_pages": 30,
+  "skip_patterns": [
+    "logout",
+    "keluar",
+    "delete",
+    "hapus",
+    "destroy",
+    "remove"
+  ],
+  "unvisited_in_queue": [],
+  "pages": [
+    {
+      "page_id": "P001",
+      "role": "APOTEKER",
+      "requested_url": "http://127.0.0.1:8000/apotek/resep",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/apotek/resep",
+      "redirected": false,
+      "title": "Resep Masuk - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Resep Masuk dari Dokter"
+      ],
+      "navigation": [
+        {
+          "text": "Resep Masuk",
+          "href": "http://127.0.0.1:8000/apotek/resep"
+        },
+        {
+          "text": "Stok Obat",
+          "href": "http://127.0.0.1:8000/apotek/obat"
+        }
+      ],
+      "links": [
+        {
+          "text": "Resep Masuk",
+          "href": "http://127.0.0.1:8000/apotek/resep"
+        },
+        {
+          "text": "Stok Obat",
+          "href": "http://127.0.0.1:8000/apotek/obat"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P001_APOTEKER_apotek-resep.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P002",
+      "role": "APOTEKER",
+      "requested_url": "http://127.0.0.1:8000/apotek/obat",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/apotek/obat",
+      "redirected": false,
+      "title": "Stok Obat - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Inventaris Obat"
+      ],
+      "navigation": [
+        {
+          "text": "Resep Masuk",
+          "href": "http://127.0.0.1:8000/apotek/resep"
+        },
+        {
+          "text": "Stok Obat",
+          "href": "http://127.0.0.1:8000/apotek/obat"
+        }
+      ],
+      "links": [
+        {
+          "text": "Resep Masuk",
+          "href": "http://127.0.0.1:8000/apotek/resep"
+        },
+        {
+          "text": "Stok Obat",
+          "href": "http://127.0.0.1:8000/apotek/obat"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        },
+        {
+          "form_index": 2,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "nama",
+              "id": null,
+              "label": "Nama obat",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Nama obat"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "satuan",
+              "id": null,
+              "label": "Satuan",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Satuan"
+            },
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "stok",
+              "id": null,
+              "label": "Stok",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Stok"
+            },
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "stok_minimum",
+              "id": null,
+              "label": "Stok min",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Stok min"
+            },
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "harga",
+              "id": null,
+              "label": "Harga",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Harga"
+            }
+          ],
+          "buttons": [
+            "+ Tambah Obat"
+          ]
+        },
+        {
+          "form_index": 3,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/2/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        },
+        {
+          "form_index": 4,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/5/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        },
+        {
+          "form_index": 5,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/4/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        },
+        {
+          "form_index": 6,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/3/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        },
+        {
+          "form_index": 7,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/1/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        },
+        {
+          "form_index": 8,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/apotek/obat/6/restok",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "number",
+              "name": "tambah",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Tambah"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar",
+        "+ Tambah Obat",
+        "Tambah",
+        "Tambah",
+        "Tambah",
+        "Tambah",
+        "Tambah",
+        "Tambah"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Obat",
+            "Stok",
+            "Minimum",
+            "Harga",
+            "Tambah stok"
+          ],
+          "row_count": 6
+        }
+      ],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P002_APOTEKER_apotek-obat.png",
+      "console_errors": [],
+      "failed_requests": []
+    }
+  ]
+}

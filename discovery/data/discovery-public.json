@@ -1,0 +1,273 @@
+{
+  "generated_at": "2026-11-25T01:41:01.108Z",
+  "base_url": "http://127.0.0.1:8000",
+  "role": "PUBLIC",
+  "method": "Playwright read-only crawler (link traversal, tanpa submit form)",
+  "max_pages": 30,
+  "skip_patterns": [
+    "logout",
+    "keluar",
+    "delete",
+    "hapus",
+    "destroy",
+    "remove"
+  ],
+  "unvisited_in_queue": [],
+  "pages": [
+    {
+      "page_id": "P001",
+      "role": "PUBLIC",
+      "requested_url": "http://127.0.0.1:8000/",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/login",
+      "redirected": true,
+      "title": "Masuk - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: 🏥 Klinik Pratama Mandiri"
+      ],
+      "navigation": [],
+      "links": [
+        {
+          "text": "Daftar akun",
+          "href": "http://127.0.0.1:8000/daftar"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/login",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "email",
+              "name": "email",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            },
+            {
+              "tag": "input",
+              "type": "password",
+              "name": "password",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Masuk"
+          ]
+        }
+      ],
+      "buttons": [
+        "Masuk"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P001_PUBLIC_login.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P002",
+      "role": "PUBLIC",
+      "requested_url": "http://127.0.0.1:8000/daftar",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/daftar",
+      "redirected": false,
+      "title": "Daftar Pasien - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Pendaftaran Akun Pasien"
+      ],
+      "navigation": [],
+      "links": [
+        {
+          "text": "Sudah punya akun? Masuk",
+          "href": "http://127.0.0.1:8000/login"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/daftar",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "name",
+              "id": null,
+              "label": "Nama lengkap",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Nama lengkap"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "nik",
+              "id": null,
+              "label": "NIK (16 digit, opsional)",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "NIK (16 digit, opsional)"
+            },
+            {
+              "tag": "input",
+              "type": "date",
+              "name": "tgl_lahir",
+              "id": null,
+              "label": "Tanggal lahir",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "telp",
+              "id": null,
+              "label": "No. HP",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "No. HP"
+            },
+            {
+              "tag": "textarea",
+              "type": "textarea",
+              "name": "alamat",
+              "id": null,
+              "label": "Alamat",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Alamat"
+            },
+            {
+              "tag": "input",
+              "type": "email",
+              "name": "email",
+              "id": null,
+              "label": "Email",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Email"
+            },
+            {
+              "tag": "input",
+              "type": "password",
+              "name": "password",
+              "id": null,
+              "label": "Kata sandi (min. 6)",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Kata sandi (min. 6)"
+            },
+            {
+              "tag": "input",
+              "type": "password",
+              "name": "password_confirmation",
+              "id": null,
+              "label": "Ulangi kata sandi",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Ulangi kata sandi"
+            }
+          ],
+          "buttons": [
+            "Daftar"
+          ]
+        }
+      ],
+      "buttons": [
+        "Daftar"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P002_PUBLIC_daftar.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P003",
+      "role": "PUBLIC",
+      "requested_url": "http://127.0.0.1:8000/login",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/login",
+      "redirected": false,
+      "title": "Masuk - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: 🏥 Klinik Pratama Mandiri"
+      ],
+      "navigation": [],
+      "links": [
+        {
+          "text": "Daftar akun",
+          "href": "http://127.0.0.1:8000/daftar"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/login",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "email",
+              "name": "email",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            },
+            {
+              "tag": "input",
+              "type": "password",
+              "name": "password",
+              "id": null,
+              "label": "",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Masuk"
+          ]
+        }
+      ],
+      "buttons": [
+        "Masuk"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P003_PUBLIC_login.png",
+      "console_errors": [],
+      "failed_requests": []
+    }
+  ]
+}

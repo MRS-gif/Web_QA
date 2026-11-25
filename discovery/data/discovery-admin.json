@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-11-25T01:48:26.894Z",
+  "base_url": "http://127.0.0.1:8000",
+  "role": "ADMIN",
+  "method": "Playwright read-only crawler (link traversal, tanpa submit form)",
+  "max_pages": 30,
+  "skip_patterns": [
+    "logout",
+    "keluar",
+    "delete",
+    "hapus",
+    "destroy",
+    "remove"
+  ],
+  "unvisited_in_queue": [],
+  "pages": [
+    {
+      "page_id": "P001",
+      "role": "ADMIN",
+      "requested_url": "http://127.0.0.1:8000/admin/antrean",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/admin/antrean",
+      "redirected": false,
+      "title": "Antrean Hari Ini - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Antrean 25 November 2026"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Hari Ini",
+          "href": "http://127.0.0.1:8000/admin/antrean"
+        },
+        {
+          "text": "Daftar di Loket",
+          "href": "http://127.0.0.1:8000/admin/walkin"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Hari Ini",
+          "href": "http://127.0.0.1:8000/admin/antrean"
+        },
+        {
+          "text": "Daftar di Loket",
+          "href": "http://127.0.0.1:8000/admin/walkin"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        },
+        {
+          "form_index": 2,
+          "id": null,
+          "method": "GET",
+          "action": null,
+          "fields": [
+            {
+              "tag": "input",
+              "type": "date",
+              "name": "tanggal",
+              "id": null,
+              "label": "",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Lihat"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar",
+        "Lihat"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "No",
+            "Pasien",
+            "Dokter",
+            "Estimasi",
+            "Sumber",
+            "Status",
+            ""
+          ],
+          "row_count": 1
+        }
+      ],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P001_ADMIN_admin-antrean.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P002",
+      "role": "ADMIN",
+      "requested_url": "http://127.0.0.1:8000/admin/walkin",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/admin/walkin",
+      "redirected": false,
+      "title": "Daftar di Loket - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Pendaftaran Pasien di Loket"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Hari Ini",
+          "href": "http://127.0.0.1:8000/admin/antrean"
+        },
+        {
+          "text": "Daftar di Loket",
+          "href": "http://127.0.0.1:8000/admin/walkin"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Hari Ini",
+          "href": "http://127.0.0.1:8000/admin/antrean"
+        },
+        {
+          "text": "Daftar di Loket",
+          "href": "http://127.0.0.1:8000/admin/walkin"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        },
+        {
+          "form_index": 2,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/admin/walkin",
+          "fields": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "dokter_id",
+              "id": null,
+              "label": "Dokter dr. Andi Pratama — Dokter Umum drg. Sari Wulandari — Dokter Gigi",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null,
+              "options": [
+                "dr. Andi Pratama — Dokter Umum",
+                "drg. Sari Wulandari — Dokter Gigi"
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "pasien_id",
+              "id": null,
+              "label": "Pasien lama (pilih bila sudah terdaftar) — Pasien baru (isi data di bawah) — RM-00001 · Siti Aminah",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null,
+              "options": [
+                "— Pasien baru (isi data di bawah) —",
+                "RM-00001 · Siti Aminah"
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "nama",
+              "id": null,
+              "label": "Nama lengkap",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Nama lengkap"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "nik",
+              "id": null,
+              "label": "NIK (16 digit, opsional)",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "NIK (16 digit, opsional)"
+            },
+            {
+              "tag": "input",
+              "type": "date",
+              "name": "tgl_lahir",
+              "id": null,
+              "label": "",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "telp",
+              "id": null,
+              "label": "No. HP",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "No. HP"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "keluhan_awal",
+              "id": null,
+              "label": "Keluhan singkat (opsional)",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Keluhan singkat (opsional)"
+            }
+          ],
+          "buttons": [
+            "Buat Nomor Antrean"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar",
+        "Buat Nomor Antrean"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P002_ADMIN_admin-walkin.png",
+      "console_errors": [],
+      "failed_requests": []
+    }
+  ]
+}

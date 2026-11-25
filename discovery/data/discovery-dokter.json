@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-11-25T01:48:44.714Z",
+  "base_url": "http://127.0.0.1:8000",
+  "role": "DOKTER",
+  "method": "Playwright read-only crawler (link traversal, tanpa submit form)",
+  "max_pages": 30,
+  "skip_patterns": [
+    "logout",
+    "keluar",
+    "delete",
+    "hapus",
+    "destroy",
+    "remove"
+  ],
+  "unvisited_in_queue": [],
+  "pages": [
+    {
+      "page_id": "P001",
+      "role": "DOKTER",
+      "requested_url": "http://127.0.0.1:8000/dokter/antrean",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/dokter/antrean",
+      "redirected": false,
+      "title": "Antrean Saya - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Antrean Pasien Hari Ini"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/dokter/antrean"
+        },
+        {
+          "text": "Rekam Medis",
+          "href": "http://127.0.0.1:8000/dokter/rekam-medis"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/dokter/antrean"
+        },
+        {
+          "text": "Rekam Medis",
+          "href": "http://127.0.0.1:8000/dokter/rekam-medis"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "No",
+            "Pasien",
+            "Keluhan awal",
+            "Estimasi",
+            "Status",
+            "Aksi"
+          ],
+          "row_count": 1
+        }
+      ],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P001_DOKTER_dokter-antrean.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P002",
+      "role": "DOKTER",
+      "requested_url": "http://127.0.0.1:8000/dokter/rekam-medis",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/dokter/rekam-medis",
+      "redirected": false,
+      "title": "Rekam Medis - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Rekam Medis Pasien Saya"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/dokter/antrean"
+        },
+        {
+          "text": "Rekam Medis",
+          "href": "http://127.0.0.1:8000/dokter/rekam-medis"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/dokter/antrean"
+        },
+        {
+          "text": "Rekam Medis",
+          "href": "http://127.0.0.1:8000/dokter/rekam-medis"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        },
+        {
+          "form_index": 2,
+          "id": null,
+          "method": "GET",
+          "action": null,
+          "fields": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q",
+              "id": null,
+              "label": "Cari nama / No. RM",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": "Cari nama / No. RM"
+            }
+          ],
+          "buttons": [
+            "Cari"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar",
+        "Cari"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Tanggal",
+            "Pasien",
+            "Diagnosa",
+            ""
+          ],
+          "row_count": 1
+        }
+      ],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P002_DOKTER_dokter-rekam-medis.png",
+      "console_errors": [],
+      "failed_requests": []
+    }
+  ]
+}

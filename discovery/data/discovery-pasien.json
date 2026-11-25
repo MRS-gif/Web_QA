@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-11-25T01:49:07.552Z",
+  "base_url": "http://127.0.0.1:8000",
+  "role": "PASIEN",
+  "method": "Playwright read-only crawler (link traversal, tanpa submit form)",
+  "max_pages": 30,
+  "skip_patterns": [
+    "logout",
+    "keluar",
+    "delete",
+    "hapus",
+    "destroy",
+    "remove"
+  ],
+  "unvisited_in_queue": [],
+  "pages": [
+    {
+      "page_id": "P001",
+      "role": "PASIEN",
+      "requested_url": "http://127.0.0.1:8000/pasien",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/pasien",
+      "redirected": false,
+      "title": "Antrean Saya - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Halo, Siti Aminah"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/pasien"
+        },
+        {
+          "text": "Booking Antrean",
+          "href": "http://127.0.0.1:8000/pasien/booking"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/pasien"
+        },
+        {
+          "text": "Booking Antrean",
+          "href": "http://127.0.0.1:8000/pasien/booking"
+        },
+        {
+          "text": "+ Booking Antrean",
+          "href": "http://127.0.0.1:8000/pasien/booking"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P001_PASIEN_pasien.png",
+      "console_errors": [],
+      "failed_requests": []
+    },
+    {
+      "page_id": "P002",
+      "role": "PASIEN",
+      "requested_url": "http://127.0.0.1:8000/pasien/booking",
+      "discovery_status": "Discovered",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:8000/pasien/booking",
+      "redirected": false,
+      "title": "Booking Antrean - Klinik Pratama Mandiri",
+      "headings": [
+        "H1: Booking Nomor Antrean"
+      ],
+      "navigation": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/pasien"
+        },
+        {
+          "text": "Booking Antrean",
+          "href": "http://127.0.0.1:8000/pasien/booking"
+        }
+      ],
+      "links": [
+        {
+          "text": "Antrean Saya",
+          "href": "http://127.0.0.1:8000/pasien"
+        },
+        {
+          "text": "Booking Antrean",
+          "href": "http://127.0.0.1:8000/pasien/booking"
+        }
+      ],
+      "forms": [
+        {
+          "form_index": 1,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/logout",
+          "fields": [],
+          "buttons": [
+            "Keluar"
+          ]
+        },
+        {
+          "form_index": 2,
+          "id": null,
+          "method": "POST",
+          "action": "http://127.0.0.1:8000/pasien/booking",
+          "fields": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "dokter_id",
+              "id": null,
+              "label": "Dokter dr. Andi Pratama — Dokter Umum (±15 menit/pasien) drg. Sari Wulandari — Dokter Gigi (±20 menit/pasien)",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null,
+              "options": [
+                "dr. Andi Pratama — Dokter Umum (±15 menit/pasien)",
+                "drg. Sari Wulandari — Dokter Gigi (±20 menit/pasien)"
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "date",
+              "name": "tanggal",
+              "id": null,
+              "label": "Tanggal kunjungan",
+              "required": true,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "keluhan_awal",
+              "id": null,
+              "label": "Keluhan singkat (opsional)",
+              "required": false,
+              "maxlength": null,
+              "pattern": null,
+              "placeholder": null
+            }
+          ],
+          "buttons": [
+            "Ambil Nomor Antrean"
+          ]
+        }
+      ],
+      "buttons": [
+        "Keluar",
+        "Ambil Nomor Antrean"
+      ],
+      "tables": [],
+      "alerts": [],
+      "screenshot": "discovery/screenshots/P002_PASIEN_pasien-booking.png",
+      "console_errors": [],
+      "failed_requests": []
+    }
+  ]
+}
